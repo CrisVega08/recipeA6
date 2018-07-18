@@ -1,3 +1,13 @@
-<p>
-  recipe-item works!
-</p>
+<a href="#" class="list-group-item clearfix">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+    <p class="list-group-item-text">{{ recipe.description }}</p>
+  </div>
+  <span class="pull-right">
+    <img src="{{ recipe.imgUrl }}" 
+      alt="{{ recipe.imgUrl }}" 
+      class="img-responsive" 
+      style="max-width: 6rem;">
+      <!-- [src] = "recipe.imgUrl"  Here you can use string interpolation or property binding--> 
+  </span>
+</a>
